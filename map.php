@@ -47,7 +47,8 @@
             /* by default the Cluster group some defaults:
             showCoverageOnHover: When you mouse over a cluster it shows the bounds of its markers.
             zoomToBoundsOnClick: When you click a cluster we zoom to its bounds.
-            spiderfyOnMaxZoom: When you click a cluster at the bottom zoom level we spiderfy it so you can see all of its markers. (Note: the spiderfy occurs at the current zoom level if all items within the cluster are still clustered at the maximum zoom level or at zoom specified by disableClusteringAtZoom option)
+            spiderfyOnMaxZoom: When you click a cluster at the bottom zoom level we spiderfy it so you can see all of its markers. 
+            (Note: the spiderfy occurs at the current zoom level if all items within the cluster are still clustered at the maximum zoom level or at zoom specified by disableClusteringAtZoom option)
             removeOutsideVisibleBounds: Clusters and markers too far from the viewport are removed from the map for performance.
             spiderLegPolylineOptions**/
 
