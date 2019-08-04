@@ -85,6 +85,3 @@
 </html>
 
 
-
-
-<!-- bing map api key:- ApyPeuf1n0Mrq5n9bwPyfVkHU2rYtod9FvmLNDJlRXUNFWwXXNxFrrC5rjfvxNyT -->
