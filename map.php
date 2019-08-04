@@ -86,5 +86,5 @@
 
 
 
-<!-- map my India api key:- a89ute9fch8ljqpmpnxrx7yewr2i1bgn -->
+
 <!-- bing map api key:- ApyPeuf1n0Mrq5n9bwPyfVkHU2rYtod9FvmLNDJlRXUNFWwXXNxFrrC5rjfvxNyT -->
