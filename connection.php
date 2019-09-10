@@ -1,8 +1,8 @@
 <?php 
-    define("DB_HOST",     "localhost"); 
-    define("DB_USER",     "id10023015_dmrcproject");
-    define("DB_PASSWORD", "dmrcproject@2019");
-    define("DB_DATABASE", "id10023015_dmrc");
+    define("DB_HOST",     "127.0.0.1"); 
+    define("DB_USER",     "root");
+    define("DB_PASSWORD", "NxX3c7THgw4YXKU");
+    define("DB_DATABASE", "dmrc");
 
     $link = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_DATABASE);
 

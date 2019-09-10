@@ -1,48 +1,220 @@
-* {
+
+/* =========================================<   BASIC STYLING    >========================================= */
+
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+*, *::before, *::after {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     text-align: center;
     font-family: 'Roboto Condensed',
     sans-serif;
 }
 
-.nav {
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    padding: 50px;
-    margin-left: 0;
-    position: fixed;
-    background: #d3f8da;
+body {
+    background: #2F2E3F;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100%;
 }
+
+a {
+    text-decoration: none;
+}
+
+.grey {
+    background: #696969;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 8px;
+}
+
+/* =========================================<   LANDING PAGE STYLING    >========================================= */
 
 .jumbotron {
     box-shadow: 0px 5px 10px #0000004f;
+    text-align: center;
+    justify-items: center;
     position: fixed;
+    z-index: 1;
     width: 100%;
-    background: #cdffb3;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #78ffd6, #cdffb3);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #78ffd6, #cdffb3);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #ffffff;
+    background: #696969;
+}
 
+.jumbotron h2:hover {
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+
+.jumbotron h2 a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .card {
+    position: fixed;
+    top: 26%;
+    left: 30%;
     margin-top: 30%;
-    z-index: -1;
-    width: 120%;
+    margin: auto;
+    width: 40%;
+    height: 40%;
     background: #fff3cc;
+    box-shadow: 0 5px 10px #0000004f;
 }
 
 .table {
-    z-index: 1;
-    margin-top: 30%;
+    position: fixed;
+    width: 45%;
+    height: 45%;
+    left: 18%;
+    z-index: -1;
+    margin: 10%;
+    color: #fff3cc;
 }
 
-/* caption {
-            z-index: 1;
-            margin-top: 30%;
-        } */
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: #FC466B;
+    position: fixed;
+    height: 60px !important;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    margin-top: 60px;
+    transform: translateX(-250px);
+    transition: transform 250ms ease-in-out;
+    background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+.sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li {
+    list-style: none;
+    color: #2F2E3F;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.sidebarMenuInner li span {
+    display: block;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.sidebarMenuInner li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sidebarMenuInner li a:hover {
+    color: #2F2E3F;
+}
+
+
+
+input[type="checkbox"]:checked~#sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+
+.sidebarIconToggle {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 22px;
+    left: 15px;
+    height: 22px;
+    width: 22px;
+}
+
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #2F2E3F;
+}
+
+.sidebarIconToggle:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 3px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 8px;
+}
+
+input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -9px;
+}

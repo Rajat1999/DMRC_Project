@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='icon' href='DMRC-logo.ico' type='image/x-icon' />
+
+    <!-- MAP link -->
+    <script src="https://apis.mapmyindia.com/advancedmaps/v1/a89ute9fch8ljqpmpnxrx7yewr2i1bgn/map_load?v=1.3&plugin=cluster"></script>
+
     <!-- bootstrap link -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- font awesome link -->
@@ -14,30 +19,36 @@
     <!-- css file link -->
     <link rel="stylesheet" href="main.css">
 
-    <title>DASHBOARD</title>
+    <style> 
+    html, body, #map {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+
+    <title>ADMIN PANEL</title>
 
 </head>
 <body>
 
-    <div class="jumbotron">
-        <h2><i class="fas fa-user-circle"></i> USER DASHBOARD</h2>
-    </div>
-    <br>
 
-    <div class="container container-fluid">
-        <div class="row">
-            <div class="col-lg-2">
-                <nav class="nav flex-column">
-                <br><br><br><br><br>
-                    <?php echo '<a class="nav-link active" href="index.php"><i class="fas fa-home"></i><br> Home</a>'; ?>
-                    <hr>
-                    <?php echo '<a class="nav-link active" href="login-info.php"><i class="fas fa-sign-in-alt"></i><br> Login Info</a>'; ?>
-                    <hr>
-                    <?php echo '<a class="nav-link" href="contact-info.php"><i class="fas fa-address-book"></i><br> Contact Info</a>'; ?>
-                    <hr>
-                    <?php echo '<a class="nav-link" href="personal-info.php"><i class="fas fa-user-lock"></i><br> Personal Info</a>'; ?>
-                    <hr>
-                    <?php echo '<a class="nav-link" href="organize-info.php"><i class="fas fa-user-shield"></i><br> Organizational Info</a>'; ?>
-                </nav>
-            </div>
+
+<!-- for (var i = 0; i < num_markers; ++i) {
+              for (var i = 0; i < latitudeArr.length; ++i) {
+                for (var i = 0; i < longitudeArr.length; ++i) {
+                  var pt = new L.LatLng(latitudeArr, longitudeArr);
+                  var m = new L.marker(pt, {
+                    draggable: true
+                  });
+
+                  markers.push(m);
+                }
+              }
+              m.bindPopup("marker clicked");
+
+            // markers.push(m);
+            } -->
+    
             

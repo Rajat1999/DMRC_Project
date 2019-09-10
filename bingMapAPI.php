@@ -59,14 +59,14 @@
     }
 
 
-    for($x=0; $x<sizeof($lat); $x++)
-    {
-        for($x=0; $x<sizeof($long); $x++)
-        {
-            echo '<h2>'.$lat[$x].','.$long[$x].'</h2>';
-            echo "<br>";
-        }
-    }
+    // for($x=0; $x<sizeof($lat); $x++)
+    // {
+    //     for($x=0; $x<sizeof($long); $x++)
+    //     {
+    //         echo '<h2>'.$lat[$x].','.$long[$x].'</h2>';
+    //         echo "<br>";
+    //     }
+    // }
     
 
     // Close Connection

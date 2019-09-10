@@ -1,4 +1,5 @@
 <?php include 'header.php' ?>
+<?php include 'jumbo-nav.php' ?>
 
 <div class="col-lg-8">
                 <?php 
@@ -13,9 +14,9 @@
                             echo "<div class='container container-fluid'>";
                                 echo "<div class='table-responsive-sm'>";
                                     echo "<caption>List of user's organizational info</caption>";
-                                    echo "<table class='table table-striped table-hover'>";
-                                        echo "<thead>";
-                                            echo "<tr style='background: #2d43'>";
+                                    echo "<table class='table'>";
+                                        echo "<thead class='grey'>";
+                                            echo "<tr>";
                                                 echo "<th>Id</th>";
                                                 echo "<th>UG Name</th>";
                                                 echo "<th>UG Branch</th>";

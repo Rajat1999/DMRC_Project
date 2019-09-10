@@ -1,4 +1,5 @@
 <?php include 'header.php' ?>
+<?php include 'jumbo-nav.php' ?>
 
             <div class="col-lg-8">
                 <?php 
@@ -6,16 +7,16 @@
                     include 'connection.php';
 
                     // attempting selection from db
-                    $sql1 = "SELECT login_info.id, login_info.username, login_info.password, login_info.email, volleyupload.photo, volleyupload.photo FROM user LEFT JOIN volleyupload ON user.id = volleyupload.id";
+                    $sql1 = "SELECT user.id, user.username, user.password, user.email, volleyupload.photo, volleyupload.photo FROM user LEFT JOIN volleyupload ON user.id = volleyupload.id";
 
                     if ($result = mysqli_query($link, $sql1)) {
                         if (mysqli_num_rows($result) > 0) {
                             echo "<div class='container container-fluid'>";
                                 echo "<div class='table-responsive-sm'>";
                                     echo "<caption class='table'>List of user's login info</caption>";
-                                    echo "<table class='table table-striped table-hover'>";
-                                        echo "<thead>";
-                                            echo "<tr style='background: #2d43'>";
+                                    echo "<table class='table'>";
+                                        echo "<thead class='grey'>";
+                                            echo "<tr>";
                                                 echo "<th>Id</th>";
                                                 echo "<th>Username</th>";
                                                 echo "<th>Password</th>";
